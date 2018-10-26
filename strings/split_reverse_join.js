@@ -21,7 +21,14 @@ You must write two print statements using console.log():
     2. Print s on a new line. If no exception was thrown, then this should be the reversed string; if an exception was thrown, this should be the original string.
 
 */
+let s = "Thanos"
 
-function reverseString(s) {
-    
+let reverseString = s => {
+    try {
+        console.log(s.split("").reverse().join(""));
+    }
+    catch (error) {
+        console.log(error.message);
+        console.log(s)
+    }
 }
